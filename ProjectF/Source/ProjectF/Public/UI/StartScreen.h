@@ -14,4 +14,10 @@ class PROJECTF_API UStartScreen : public UUserWidget
 {
 	GENERATED_BODY()
 	
+
+public:
+
+	UFUNCTION(BlueprintCallable)
+		void ChangeScreen();
+
 };

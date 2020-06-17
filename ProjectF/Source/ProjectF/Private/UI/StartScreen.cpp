@@ -3,3 +3,7 @@
 
 #include "StartScreen.h"
 
+void UStartScreen::ChangeScreen()
+{
+
+}

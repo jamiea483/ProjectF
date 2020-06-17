@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "Netplay.generated.h"
 
+class UButton;
 /**
  * 
  */
@@ -14,4 +15,14 @@ class PROJECTF_API UNetplay : public UUserWidget
 {
 	GENERATED_BODY()
 	
+public:
+
+	UPROPERTY(BlueprintReadWrite, Category = "Netplay", meta = (BindWidget))
+		UButton* LobbysButton;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Netplay", meta = (BindWidget))
+		UButton* LobbyCreationButton;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Netplay", meta = (BindWidget))
+		UButton* QuickMatchButton;
 };

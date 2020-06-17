@@ -6,6 +6,7 @@
 #include "Blueprint/UserWidget.h"
 #include "Arcade.generated.h"
 
+class UButton;
 /**
  * 
  */
@@ -14,4 +15,9 @@ class PROJECTF_API UArcade : public UUserWidget
 {
 	GENERATED_BODY()
 	
+public:
+
+	UPROPERTY(BlueprintReadWrite, Category = "Settings", meta = (BindWidget))
+		UButton* SaveSettingsButton;
+
 };

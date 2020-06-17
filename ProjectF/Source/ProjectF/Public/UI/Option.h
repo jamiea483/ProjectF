@@ -6,6 +6,8 @@
 #include "Blueprint/UserWidget.h"
 #include "Option.generated.h"
 
+class UButton;
+
 /**
  * 
  */
@@ -14,4 +16,12 @@ class PROJECTF_API UOption : public UUserWidget
 {
 	GENERATED_BODY()
 	
+public:
+
+	UPROPERTY(BlueprintReadWrite, Category = "Settings", meta = (BindWidget))
+		UButton* GameplayButton;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Settings", meta = (BindWidget))
+		UButton* AudioButton;
+
 };

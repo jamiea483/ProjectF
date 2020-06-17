@@ -3,3 +3,8 @@
 
 #include "AudioWidget.h"
 
+void UAudioWidget::SaveSettings()
+{
+}
+
+
