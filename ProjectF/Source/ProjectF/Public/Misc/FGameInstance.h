@@ -13,6 +13,19 @@
 class UMainMenu;
 class FOnlineSessionSearch;
 
+USTRUCT()
+struct FPlayerServerSettings
+{
+	GENERATED_BODY()
+
+		FString ServerName;
+
+	int32 PublicSlots;
+
+	int32 PrivateSlots;
+
+	FString SetPassword;
+};
 /**
  * 
  */
@@ -31,6 +44,15 @@ public:
 		UFUNCTION(BlueprintCallable)
 		void Join(int32 Index);
 
+		
+
+protected:
+
+	void CreateSession();
+
+	void JoinFunction(const int32 & Index);
+
+	void DestroyExistingSession();
 
 protected:
 
@@ -46,4 +68,5 @@ protected:
 
 	TSharedPtr<FOnlineSessionSearch> SessionSearch;
 
+	FPlayerServerSettings ServerSettings;
 };

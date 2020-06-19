@@ -6,6 +6,19 @@
 #include "Blueprint/UserWidget.h"
 #include "Lobbys.generated.h"
 
+USTRUCT()
+struct FServerStruct
+{
+	GENERATED_BODY()
+
+		FString Name;
+
+	uint32 CurrentPlayers;
+
+	uint32 MaxPlayers;
+
+	FString UserName;
+};
 /**
  * 
  */
